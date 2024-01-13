@@ -26,6 +26,11 @@ class OneViewController: UIViewController, UICollectionViewDelegate, UICollectio
         
         collectionViewTwo.dataSource = self
         collectionViewTwo.delegate = self
+//        NSLayoutConstraint.activate([
+//                   // Констрейнты для отступов
+//                   collectionViewOne.bottomAnchor.constraint(equalTo: collectionViewTwo.bottomAnchor, constant: 20),
+//                   // Добавьте другие необходимые констрейнты по вашему выбору
+//               ])
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
