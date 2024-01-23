@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomCircleViewGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-bF-NEr" customClass="CustomView" customModule="CustomCircleViewGesture" customModuleProvider="target">
+                                <rect key="frame" x="51" y="86" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="39Y-vk-aF5"/>
+                                    <constraint firstAttribute="height" constant="100" id="4te-81-GKm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uVt-LB-5lD" appends="YES" id="aAD-09-klj"/>
+                                </connections>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-qY-W1P" customClass="CustomView" customModule="CustomCircleViewGesture" customModuleProvider="target">
+                                <rect key="frame" x="257" y="110" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Wf4-0B-qjq"/>
+                                    <constraint firstAttribute="width" constant="100" id="h5b-90-TmE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
+                                        <color key="value" systemColor="tintColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ey4-Ye-cwJ" appends="YES" id="iA3-tA-TB7"/>
+                                </connections>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gI-jh-wta" customClass="CustomView" customModule="CustomCircleViewGesture" customModuleProvider="target">
+                                <rect key="frame" x="51" y="270" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4HP-A0-jYs"/>
+                                    <constraint firstAttribute="width" constant="100" id="U1n-ty-gcR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IaD-bh-7lS" appends="YES" id="GRC-vu-1qx"/>
+                                </connections>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-79-uMr" customClass="CustomView" customModule="CustomCircleViewGesture" customModuleProvider="target">
+                                <rect key="frame" x="254" y="377" width="103" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="gFd-Ab-Bi8"/>
+                                    <constraint firstAttribute="height" constant="100" id="r36-ua-Abq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qjF-5A-kml" appends="YES" id="n7C-nG-om1"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y9-XO-xKW" customClass="CustomView" customModule="CustomCircleViewGesture" customModuleProvider="target">
+                                <rect key="frame" x="257" y="609" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JWh-WH-ccj"/>
+                                    <constraint firstAttribute="width" constant="100" id="iea-4p-uRH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uic-xm-U6E" appends="YES" id="FXM-3V-3zv"/>
+                                </connections>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Dl-Te-g26" customClass="CustomView" customModule="CustomCircleViewGesture" customModuleProvider="target">
+                                <rect key="frame" x="51" y="691" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vMO-GY-lYM"/>
+                                    <constraint firstAttribute="height" constant="100" id="zc2-NZ-09w"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kWq-Da-25J" appends="YES" id="smK-BP-oYG"/>
+                                </connections>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSr-dL-t1f" customClass="CustomView" customModule="CustomCircleViewGesture" customModuleProvider="target">
+                                <rect key="frame" x="51" y="480" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gvd-Ng-dWg"/>
+                                    <constraint firstAttribute="height" constant="100" id="j3J-uF-ABa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FHQ-Sk-bP4" appends="YES" id="dhO-VE-lI1"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0y9-XO-xKW" secondAttribute="bottom" constant="109" id="0h9-N8-2OP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0y9-XO-xKW" secondAttribute="trailing" constant="36" id="3EI-yP-HjY"/>
+                            <constraint firstItem="sSr-dL-t1f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="7rC-Vp-zIH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgg-79-uMr" secondAttribute="trailing" constant="36" id="8hM-93-vX3"/>
+                            <constraint firstItem="sSr-dL-t1f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="104" id="B52-M9-rZK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DWf-qY-W1P" secondAttribute="trailing" constant="36" id="HWv-R4-yH0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Dl-Te-g26" secondAttribute="bottom" constant="27" id="KNf-zY-onn"/>
+                            <constraint firstItem="xIT-bF-NEr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="Rjq-rW-CdJ"/>
+                            <constraint firstItem="DWf-qY-W1P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="UWW-8x-u9H"/>
+                            <constraint firstItem="6Dl-Te-g26" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="YJ1-wH-rmp"/>
+                            <constraint firstItem="xIT-bF-NEr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="Zzb-SB-g4b"/>
+                            <constraint firstItem="4gI-jh-wta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="bTj-fW-ysI"/>
+                            <constraint firstItem="4gI-jh-wta" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-106" id="kGs-Rh-ZlR"/>
+                            <constraint firstItem="kgg-79-uMr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1" id="yw2-ES-ifo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="customView" destination="xIT-bF-NEr" collectionClass="NSMutableArray" id="qoG-Hg-7GV"/>
+                        <outletCollection property="customView" destination="DWf-qY-W1P" collectionClass="NSMutableArray" id="FQg-Rb-ppL"/>
+                        <outletCollection property="customView" destination="4gI-jh-wta" collectionClass="NSMutableArray" id="db0-Yn-E3r"/>
+                        <outletCollection property="customView" destination="kgg-79-uMr" collectionClass="NSMutableArray" id="rzp-kf-jaT"/>
+                        <outletCollection property="customView" destination="sSr-dL-t1f" collectionClass="NSMutableArray" id="IuH-Dg-nf0"/>
+                        <outletCollection property="customView" destination="0y9-XO-xKW" collectionClass="NSMutableArray" id="Ikr-n5-Op6"/>
+                        <outletCollection property="customView" destination="6Dl-Te-g26" collectionClass="NSMutableArray" id="JNa-jl-UyP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="uVt-LB-5lD">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="g8u-Re-hwg"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="D3E-JS-Whr"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ey4-Ye-cwJ">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="umF-9e-Cm3"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="8a9-0F-SI9"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="IaD-bh-7lS">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="DQl-DM-byR"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="oyJ-AR-DAD"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qjF-5A-kml">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="910-eX-GgE"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="PkV-7W-aHp"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="FHQ-Sk-bP4">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Rju-6B-Tgm"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="heX-bq-fj8"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Uic-xm-U6E">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="neS-zu-VuY"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="rdy-cy-HUg"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="kWq-Da-25J">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="5B0-tK-I9s"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="efd-51-thH"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
