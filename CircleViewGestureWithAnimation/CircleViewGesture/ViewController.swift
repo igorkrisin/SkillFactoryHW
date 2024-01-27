@@ -4,7 +4,7 @@
 //
 //  Created by Игорь Крысин on 20.01.2024.
 //
-
+import Foundation
 import UIKit
 
 class ViewController: UIViewController {
@@ -14,25 +14,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //createArrayViews(view: myCustomView, count: 7)
-        //print(views)
-        drawCircleView(countView: 7,  color: .red)
-        //print("create")
+        drawCircleView(countView: 7)
     }
     
     
-    func createArrayViews(view: UIView?, count: Int) {
-        for _ in 0..<count {
-            guard let myView = view else { return }
-            views.append(myView)
-        }
-    }
 
-    func drawCircleView(countView: Int, color: UIColor){
+    func drawCircleView(countView: Int){
+       
         let subscribeWidth  = (0...Int(view.frame.width) - 100)
         let subscribHeight  = (0...Int(view.frame.height) - 100)
         var i: Int = 0
         while i < countView {
+            let color = setDifferentCollor()
             let customView = UIView()
             let x = subscribeWidth.randomElement()!
             let y = subscribHeight.randomElement()!
@@ -68,14 +61,19 @@ class ViewController: UIViewController {
         let movingView = recognizer.translation(in: self.view)
         guard let gestureView = recognizer.view else { return }
         //print(gestureView)
+        self.view.bringSubviewToFront(gestureView)
         gestureView.center = CGPoint (
             x: gestureView.center.x + movingView.x,
             y: gestureView.center.y + movingView.y)
         
         recognizer.setTranslation(CGPoint.zero, in: self.view)
-        
-        //add intersecrion between view here
-        addIntersectionView(recognizer, views: views)
+        if recognizer.state == .ended {
+            UIView.animate(withDuration: 0.5) { [self] in
+                addIntersectionView(recognizer, views: self.views)
+            }
+            //add intersecrion between view here
+            
+        }
       
     }
     
@@ -85,7 +83,7 @@ class ViewController: UIViewController {
         for otherView in views {
             if otherView != movingView && movingView.frame.intersects(otherView.frame){
                 otherView.frame = CGRect(x: otherView.frame.minX, y: otherView.frame.minY, width: otherView.frame.width + 20, height: otherView.frame.height + 20)
-                otherView.backgroundColor = .green
+                otherView.backgroundColor = setDifferentCollor()
                 otherView.layer.cornerRadius =  CGFloat(otherView.frame.height/2)
                 movingView.removeFromSuperview()
                 deleteElementArray(view: movingView)
@@ -114,6 +112,27 @@ class ViewController: UIViewController {
         }
     }
     
+    func setDifferentCollor() -> UIColor {
+        let color: UIColor = .randomColor()
+        return color
+    }
+    
     
 }
 
+extension CGFloat {
+    static func randomFloat() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func randomColor() -> UIColor {
+        return UIColor(
+           red:   .randomFloat(),
+           green: .randomFloat(),
+           blue:  .randomFloat(),
+           alpha: 1.0
+        )
+    }
+}
