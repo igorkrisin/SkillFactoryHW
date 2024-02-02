@@ -75,6 +75,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 91
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else { return }
+        vc.toDo = SettingsViewController.manager.toDos[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
 extension HomeViewController: MyDelegate {

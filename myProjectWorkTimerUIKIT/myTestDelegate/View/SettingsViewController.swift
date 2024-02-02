@@ -11,7 +11,7 @@ import CoreData
 class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     static let manager = CoreManager.shared
-    //var toDo: Todo?
+    var toDo: Todo?
     
     
     
@@ -19,7 +19,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tableSettingView: UITableView!
     
-    var arrayTimerName: [String] = ["sdsdsds", "ghghgh"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

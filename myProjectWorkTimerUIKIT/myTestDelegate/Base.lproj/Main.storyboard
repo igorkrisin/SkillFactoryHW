@@ -70,9 +70,6 @@
                                                             <rect key="frame" x="86.333333333333343" y="0.0" width="68" height="57"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="trash" title=""/>
-                                                            <connections>
-                                                                <action selector="deleteTapped:" destination="ZE5-dI-uMV" eventType="touchUpInside" id="Yo6-iE-tiz"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
