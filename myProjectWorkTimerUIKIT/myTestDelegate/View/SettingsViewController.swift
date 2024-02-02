@@ -5,6 +5,10 @@
 //  Created by Игорь Крысин on 28.01.2024.
 //
 
+protocol CellDelegate: AnyObject {
+    func deleteButtonTapped(sender: SettingCell)
+}
+
 import UIKit
 import CoreData
 
@@ -65,9 +69,19 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         navigationController?.pushViewController(vc, animated: true)
     }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let todo = SettingsViewController.manager.toDos[indexPath.row]
+            todo.deleteTodo()
+            SettingsViewController.manager.toDos.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
     
-    @IBAction func deleteTapped(_ sender: Any, indexPath: IndexPath) { // остановился на удалении как  сделать с кнопки - надо погуглить
-        let toDo = SettingsViewController.manager.toDos[indexPath.row]
+    @IBAction func deleteTapped(_ sender: UITableViewCell, indexPath: IndexPath) {
+        
+                
+        
     }
     
     
