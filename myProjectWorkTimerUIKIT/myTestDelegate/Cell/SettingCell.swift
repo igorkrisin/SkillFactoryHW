@@ -9,7 +9,7 @@ import UIKit
 
 class SettingCell: UITableViewCell {
 
-    
+    var callback: ((UITableViewCell) -> Void)?
     
     @IBOutlet weak var nameToDo: UILabel!
     
@@ -31,6 +31,10 @@ class SettingCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func checkButtonTapped(_ sender: Any) {
+        callback?(self)
+        
+    }
     
     
 

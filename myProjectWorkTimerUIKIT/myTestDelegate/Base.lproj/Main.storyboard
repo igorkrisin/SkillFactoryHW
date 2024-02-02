@@ -70,6 +70,9 @@
                                                             <rect key="frame" x="86.333333333333343" y="0.0" width="68" height="57"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="trash" title=""/>
+                                                            <connections>
+                                                                <action selector="checkButtonTapped:" destination="GIe-wl-XjG" eventType="touchUpInside" id="rte-5x-are"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>

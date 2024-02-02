@@ -59,6 +59,14 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         
         cell.nameToDo.text = SettingsViewController.manager.toDos[indexPath.row].name ?? "error"
+        
+        cell.callback = {cell in
+            let indexPath = tableView.indexPath(for: cell)!
+            let todo = SettingsViewController.manager.toDos[indexPath.row]
+            todo.deleteTodo()
+            SettingsViewController.manager.toDos.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
         return cell
     }
     
@@ -79,7 +87,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     @IBAction func deleteTapped(_ sender: UITableViewCell, indexPath: IndexPath) {
-        
+       
+
                 
         
     }

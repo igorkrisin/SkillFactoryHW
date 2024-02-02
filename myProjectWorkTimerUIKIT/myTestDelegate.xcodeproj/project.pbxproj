@@ -15,6 +15,7 @@
 		C55039DB2B6B67E900E6C977 /* Todo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55039D92B6B67E900E6C977 /* Todo+CoreDataClass.swift */; };
 		C55039DC2B6B67E900E6C977 /* Todo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55039DA2B6B67E900E6C977 /* Todo+CoreDataProperties.swift */; };
 		C55039DF2B6B684200E6C977 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55039DE2B6B684200E6C977 /* CoreManager.swift */; };
+		C58A57A62B6D3AB900C7A46F /* SettingVC+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A57A52B6D3AB900C7A46F /* SettingVC+UITableViewCell.swift */; };
 		C58C2AE62B555CF800AD41B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58C2AE52B555CF800AD41B3 /* AppDelegate.swift */; };
 		C58C2AE82B555CF800AD41B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58C2AE72B555CF800AD41B3 /* SceneDelegate.swift */; };
 		C58C2AEA2B555CF800AD41B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58C2AE92B555CF800AD41B3 /* HomeViewController.swift */; };
@@ -33,6 +34,7 @@
 		C55039D92B6B67E900E6C977 /* Todo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C55039DA2B6B67E900E6C977 /* Todo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C55039DE2B6B684200E6C977 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
+		C58A57A52B6D3AB900C7A46F /* SettingVC+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingVC+UITableViewCell.swift"; sourceTree = "<group>"; };
 		C58C2AE22B555CF800AD41B3 /* myTestDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTestDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58C2AE52B555CF800AD41B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C58C2AE72B555CF800AD41B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				C5257AD62B669D4C00CE4579 /* UIBarButtonItem+cell.swift */,
+				C58A57A52B6D3AB900C7A46F /* SettingVC+UITableViewCell.swift */,
 			);
 			path = Extansions;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				C58C2AE62B555CF800AD41B3 /* AppDelegate.swift in Sources */,
 				C58C2AFA2B55A7E200AD41B3 /* ListTodoVC.swift in Sources */,
 				C5257AD52B6695BB00CE4579 /* SettingCell.swift in Sources */,
+				C58A57A62B6D3AB900C7A46F /* SettingVC+UITableViewCell.swift in Sources */,
 				C55039DC2B6B67E900E6C977 /* Todo+CoreDataProperties.swift in Sources */,
 				C5257AD72B669D4C00CE4579 /* UIBarButtonItem+cell.swift in Sources */,
 				C58C2AE82B555CF800AD41B3 /* SceneDelegate.swift in Sources */,
