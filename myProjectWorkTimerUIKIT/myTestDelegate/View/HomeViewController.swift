@@ -8,10 +8,6 @@ import CoreData
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
-    
-    
-    
-    
     private let manager = CoreManager.shared
 
     @IBOutlet weak var workTableView: UITableView!
@@ -19,6 +15,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var createButton: UIButton!
     
     var nameWorkArr: [WorkTimerCell] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,17 +26,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         workTableView.reloadData()
     }
    
+    
     @IBAction func moveToSettings(_ sender: Any) {
-        
-       
-        
         performSegue(withIdentifier: "HometoMoveSettings", sender: self)
     }
+    
     
     @IBAction func createButtonAction(_ sender: Any) {
         performSegue(withIdentifier: "toListTodoVC", sender: self)
@@ -55,10 +52,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
          }
      }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.toDos.count
         
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "WorkNameCell", for: indexPath) as? WorkTimerCell else { return UITableViewCell() }
@@ -66,17 +65,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 91
     }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else { return }
         vc.toDo = SettingsViewController.manager.toDos[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
+
 
 extension HomeViewController: MyDelegate {
     func createTodoName(name: String) {
