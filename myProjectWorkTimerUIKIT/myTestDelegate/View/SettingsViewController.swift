@@ -5,10 +5,6 @@
 //  Created by Игорь Крысин on 28.01.2024.
 //
 
-protocol CellDelegate: AnyObject {
-    func deleteButtonTapped(sender: SettingCell)
-}
-
 import UIKit
 import CoreData
 
@@ -16,10 +12,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     static let manager = CoreManager.shared
     var toDo: Todo?
-    
-    
-    
-    weak var myDelegate: MyDelegate?
     
     @IBOutlet weak var tableSettingView: UITableView!
     
@@ -42,24 +34,22 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
    
     
-    func fetchOnlyObject(){
-        
-    }
-    
     @objc func backToHomeScreen() {
         navigationController?.popViewController(animated: true)
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return SettingsViewController.manager.toDos.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as? SettingCell else { return UITableViewCell() }
         
-        
         cell.nameToDo.text = SettingsViewController.manager.toDos[indexPath.row].name ?? "error"
         
+        //delete for button
         cell.callback = {cell in
             let indexPath = tableView.indexPath(for: cell)!
             let todo = SettingsViewController.manager.toDos[indexPath.row]
@@ -76,7 +66,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         vc.todo = SettingsViewController.manager.toDos[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
-
+    
+    //delete for swap
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let todo = SettingsViewController.manager.toDos[indexPath.row]
@@ -86,12 +77,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
-    @IBAction func deleteTapped(_ sender: UITableViewCell, indexPath: IndexPath) {
-       
-
-                
-        
-    }
     
     
 }

@@ -63,11 +63,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "WorkNameCell", for: indexPath) as? WorkTimerCell else { return UITableViewCell() }
         cell.setNameWork(name: manager.toDos[indexPath.row].name ?? "error")
-        cell.buttonTappedHandler = {
-            print(self.manager.toDos[indexPath.row].id)
-            print(indexPath.row)
-        }
-       
         return cell
     }
     
