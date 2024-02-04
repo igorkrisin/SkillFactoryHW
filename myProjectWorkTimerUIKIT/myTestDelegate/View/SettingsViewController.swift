@@ -64,6 +64,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "ListTodoVC") as? CreateNewToDoVC else { return }
         vc.todo = SettingsViewController.manager.toDos[indexPath.row]
+        vc.dataTextfield = SettingsViewController.manager.toDos[indexPath.row].name ?? ""
         navigationController?.pushViewController(vc, animated: true)
     }
     

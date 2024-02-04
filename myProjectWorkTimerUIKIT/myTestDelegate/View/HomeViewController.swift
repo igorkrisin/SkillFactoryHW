@@ -46,7 +46,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          if segue.identifier == "toListTodoVC", let vc = segue.destination as? CreateNewToDoVC {
-             vc.ToDoDelegate = self
          } else if segue.identifier == "HometoMoveSettings", let vc = segue.destination as? SettingsViewController {
              
          }

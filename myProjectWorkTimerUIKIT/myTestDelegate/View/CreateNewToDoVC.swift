@@ -14,9 +14,9 @@ class CreateNewToDoVC: UIViewController {
     private let manager = CoreManager.shared
     var todo: Todo?
     
-    weak var ToDoDelegate: MyDelegate?
-    
     @IBOutlet weak var textFieldFieldToDo: UITextField!
+    var dataTextfield = ""
+
     
     @IBOutlet weak var leftItemButton: UINavigationItem!
     
@@ -32,7 +32,7 @@ class CreateNewToDoVC: UIViewController {
         
         backLeftButton.stileForUIBarButton(button: backLeftButton)
         saveRightButton.stileForUIBarButton(button: saveRightButton)
-        
+        textFieldFieldToDo.text = dataTextfield
         
         navigationItem.leftBarButtonItem = backLeftButton
         navigationItem.rightBarButtonItem = saveRightButton
@@ -51,9 +51,10 @@ class CreateNewToDoVC: UIViewController {
         if self.todo == nil {
             self.manager.addNewTodo(name: textFieldFieldToDo.text ?? "", hourses: "00", minutes: "00", seconds: "00")
         } else {
+            
             self.todo?.updateTodo(newName: textFieldFieldToDo.text ?? "")
         }
-        ToDoDelegate?.createTodoName(name: textFieldFieldToDo.text ?? "")
+        
         navigationController?.popViewController(animated: true)
         
     }
