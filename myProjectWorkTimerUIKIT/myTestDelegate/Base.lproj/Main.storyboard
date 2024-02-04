@@ -95,7 +95,6 @@
                                                         </button>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="57" id="cHb-tY-L7J"/>
                                                         <constraint firstItem="bDh-M0-NTT" firstAttribute="leading" secondItem="EfK-f5-tFp" secondAttribute="leading" id="dgk-h1-bcP"/>
                                                         <constraint firstItem="G9c-kH-8yu" firstAttribute="leading" secondItem="bDh-M0-NTT" secondAttribute="trailing" constant="3" id="eL3-N3-to4"/>
                                                         <constraint firstItem="HOp-2A-6ea" firstAttribute="leading" secondItem="G9c-kH-8yu" secondAttribute="trailing" constant="3" id="g71-il-IHf"/>
@@ -276,18 +275,18 @@
                     <connections>
                         <outlet property="createButton" destination="Zf4-Y0-i2C" id="PrW-x5-Ng7"/>
                         <outlet property="workTableView" destination="AXO-z9-WDb" id="91w-JG-Ee2"/>
-                        <segue destination="TE1-5T-Zei" kind="show" identifier="toListTodoVC" id="1qT-Gx-OQQ"/>
-                        <segue destination="ZE5-dI-uMV" kind="show" identifier="HometoMoveSettings" id="hbA-N3-jJf"/>
+                        <segue destination="TE1-5T-Zei" kind="show" identifier="CreateNewToDoVC" id="1qT-Gx-OQQ"/>
+                        <segue destination="ZE5-dI-uMV" kind="show" identifier="HomeToMoveSettings" id="hbA-N3-jJf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1695" y="-32"/>
         </scene>
-        <!--list todo view controller-->
+        <!--Create todo view controller-->
         <scene sceneID="JBh-ea-H2d">
             <objects>
-                <viewController storyboardIdentifier="ListTodoVC" title="list todo view controller" id="TE1-5T-Zei" customClass="CreateNewToDoVC" customModule="myTestDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateNewToDoVC" title="Create todo view controller" id="TE1-5T-Zei" customClass="CreateNewToDoVC" customModule="myTestDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ds-GN-6Ve">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

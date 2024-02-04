@@ -66,13 +66,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		C5257ACE2B664C5D00CE4579 /* Timer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Timer;
-			sourceTree = "<group>";
-		};
 		C5257ACF2B6650D800CE4579 /* Extansions */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +111,6 @@
 				C58C2AEB2B555CF800AD41B3 /* Main.storyboard */,
 				C5257ACD2B662A9200CE4579 /* Cell */,
 				C5257ACF2B6650D800CE4579 /* Extansions */,
-				C5257ACE2B664C5D00CE4579 /* Timer */,
 				C58C2AEE2B555CF900AD41B3 /* Assets.xcassets */,
 				C58C2AF02B555CF900AD41B3 /* LaunchScreen.storyboard */,
 				C58C2AF32B555CF900AD41B3 /* Info.plist */,

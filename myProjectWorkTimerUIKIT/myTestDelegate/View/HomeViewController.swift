@@ -34,19 +34,22 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
    
     
     @IBAction func moveToSettings(_ sender: Any) {
-        performSegue(withIdentifier: "HometoMoveSettings", sender: self)
+        performSegue(withIdentifier: "HomeToMoveSettings", sender: self)
     }
     
     
     @IBAction func createButtonAction(_ sender: Any) {
-        performSegue(withIdentifier: "toListTodoVC", sender: self)
+        performSegue(withIdentifier: "CreateNewToDoVC", sender: self)
     }
     
     // MARK: - Navigation
     
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         if segue.identifier == "toListTodoVC", let vc = segue.destination as? CreateNewToDoVC {
-         } else if segue.identifier == "HometoMoveSettings", let vc = segue.destination as? SettingsViewController {
+         
+         if segue.identifier == "CreateNewToDoVC", let vc = segue.destination as? CreateNewToDoVC {
+             print("prepare from HomeVC to Create")
+         } else if segue.identifier == "HomeToMoveSettings", let vc = segue.destination as? SettingsViewController {
+             print("prepare from HomeVC to Setting")
              
          }
      }
