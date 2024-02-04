@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 
-class ListTodoVC: UIViewController {
+class CreateNewToDoVC: UIViewController {
     
     private let manager = CoreManager.shared
     var todo: Todo?

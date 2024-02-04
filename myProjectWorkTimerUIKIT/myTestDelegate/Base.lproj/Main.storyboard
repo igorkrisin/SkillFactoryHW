@@ -262,7 +262,7 @@
         <!--list todo view controller-->
         <scene sceneID="JBh-ea-H2d">
             <objects>
-                <viewController storyboardIdentifier="ListTodoVC" title="list todo view controller" id="TE1-5T-Zei" customClass="ListTodoVC" customModule="myTestDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListTodoVC" title="list todo view controller" id="TE1-5T-Zei" customClass="CreateNewToDoVC" customModule="myTestDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ds-GN-6Ve">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

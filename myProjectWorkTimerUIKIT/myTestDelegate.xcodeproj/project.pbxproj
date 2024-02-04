@@ -22,7 +22,7 @@
 		C58C2AED2B555CF800AD41B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58C2AEB2B555CF800AD41B3 /* Main.storyboard */; };
 		C58C2AEF2B555CF900AD41B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58C2AEE2B555CF900AD41B3 /* Assets.xcassets */; };
 		C58C2AF22B555CF900AD41B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58C2AF02B555CF900AD41B3 /* LaunchScreen.storyboard */; };
-		C58C2AFA2B55A7E200AD41B3 /* ListTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58C2AF92B55A7E200AD41B3 /* ListTodoVC.swift */; };
+		C58C2AFA2B55A7E200AD41B3 /* CreateNewToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58C2AF92B55A7E200AD41B3 /* CreateNewToDoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		C58C2AEE2B555CF900AD41B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C58C2AF12B555CF900AD41B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C58C2AF32B555CF900AD41B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C58C2AF92B55A7E200AD41B3 /* ListTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTodoVC.swift; sourceTree = "<group>"; };
+		C58C2AF92B55A7E200AD41B3 /* CreateNewToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewToDoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C58C2AE92B555CF800AD41B3 /* HomeViewController.swift */,
-				C58C2AF92B55A7E200AD41B3 /* ListTodoVC.swift */,
+				C58C2AF92B55A7E200AD41B3 /* CreateNewToDoVC.swift */,
 				C5257AD22B66661400CE4579 /* SettingsViewController.swift */,
 			);
 			path = View;
@@ -214,7 +214,7 @@
 				C55039D82B6B676300E6C977 /* myTestDelegate.xcdatamodeld in Sources */,
 				C55039DB2B6B67E900E6C977 /* Todo+CoreDataClass.swift in Sources */,
 				C58C2AE62B555CF800AD41B3 /* AppDelegate.swift in Sources */,
-				C58C2AFA2B55A7E200AD41B3 /* ListTodoVC.swift in Sources */,
+				C58C2AFA2B55A7E200AD41B3 /* CreateNewToDoVC.swift in Sources */,
 				C5257AD52B6695BB00CE4579 /* SettingCell.swift in Sources */,
 				C58A57A62B6D3AB900C7A46F /* SettingVC+UITableViewCell.swift in Sources */,
 				C55039DC2B6B67E900E6C977 /* Todo+CoreDataProperties.swift in Sources */,
