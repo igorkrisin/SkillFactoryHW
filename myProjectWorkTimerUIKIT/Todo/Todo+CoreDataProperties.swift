@@ -31,8 +31,17 @@ extension Todo : Identifiable {
         try? managedObjectContext?.save()
     }
     
+    func updateTimer(hours: String, minutes: String, seconds: String) {
+        self.hourses = hours
+        self.minutes = minutes
+        self.seconds = seconds
+        
+        try? managedObjectContext?.save()
+    }
+    
     func deleteTodo(){
         managedObjectContext?.delete(self)
+        
         try? managedObjectContext?.save()
     }
 }

@@ -1,10 +1,3 @@
-//
-//  ListTodoVC.swift
-//  myTestDelegate
-//
-//  Created by Игорь Крысин on 15.01.2024.
-//
-
 import UIKit
 import CoreData
 
@@ -36,9 +29,6 @@ class CreateNewToDoVC: UIViewController {
         
         navigationItem.leftBarButtonItem = backLeftButton
         navigationItem.rightBarButtonItem = saveRightButton
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     @objc func backButtonTapped() {
@@ -51,23 +41,11 @@ class CreateNewToDoVC: UIViewController {
         if self.todo == nil {
             self.manager.addNewTodo(name: textFieldFieldToDo.text ?? "", hourses: "00", minutes: "00", seconds: "00")
         } else {
-            
             self.todo?.updateTodo(newName: textFieldFieldToDo.text ?? "")
         }
-        
         navigationController?.popViewController(animated: true)
-        
     }
     
     
-    
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    
-    
-
 }
 

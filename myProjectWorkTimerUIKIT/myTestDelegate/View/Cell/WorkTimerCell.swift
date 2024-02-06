@@ -1,15 +1,11 @@
-//
-//  WorkNameCell.swift
-//  myTestDelegate
-//
-//  Created by Игорь Крысин on 28.01.2024.
-//
-
 import UIKit
 
 class WorkTimerCell: UITableViewCell {
+    var manager = CoreManager.shared
+    var todo: Todo?
     
     var buttonTappedHandler: (() -> Void)?
+    var buttonSaveButton: (() -> Void)?
     
     @IBOutlet weak var nameWork: UILabel!
     
@@ -69,7 +65,7 @@ class WorkTimerCell: UITableViewCell {
     
     
     @IBAction func recordToDOTimer(_ sender: Any) {
-        
+        print(buttonSaveButton?() ?? "0")
         
     }
     

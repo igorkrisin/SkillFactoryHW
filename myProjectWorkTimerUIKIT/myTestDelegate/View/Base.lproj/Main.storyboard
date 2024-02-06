@@ -223,7 +223,7 @@
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="done" title=""/>
                                                             <connections>
-                                                                <action selector="recordToDOTimer:" destination="U3U-9i-NwQ" eventType="touchUpInside" id="lbs-Fy-c1S"/>
+                                                                <action selector="recordToDOTimer:" destination="U3U-9i-NwQ" eventType="touchUpInside" id="MXB-Yp-J5l"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -252,7 +252,6 @@
                                             <outlet property="hourLabel" destination="vfJ-nR-SgK" id="Qvg-g4-bG0"/>
                                             <outlet property="minuteLabel" destination="knT-LI-EL6" id="0br-aC-TbU"/>
                                             <outlet property="nameWork" destination="EfM-35-Cw0" id="IUH-Zm-yG4"/>
-                                            <outlet property="saveToDo" destination="I5g-VQ-3l0" id="cRx-z2-xKh"/>
                                             <outlet property="secondLabel" destination="gmm-Lc-JO5" id="ecB-Sw-Y9l"/>
                                         </connections>
                                     </tableViewCell>
