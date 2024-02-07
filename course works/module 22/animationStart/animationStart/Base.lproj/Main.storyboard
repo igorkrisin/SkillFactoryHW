@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animationStart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycy-Et-nZf">
+                                <rect key="frame" x="122.66666666666667" y="352" width="149.66666666666663" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skillFaktory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFa-3A-xy0">
+                                        <rect key="frame" x="31.999999999999986" y="65" width="86" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="86" id="SlB-Do-rjy"/>
+                                            <constraint firstAttribute="height" constant="21" id="mrL-MZ-Cxu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstItem="FFa-3A-xy0" firstAttribute="top" secondItem="ycy-Et-nZf" secondAttribute="top" constant="65" id="fBQ-fM-1ME"/>
+                                    <constraint firstItem="FFa-3A-xy0" firstAttribute="leading" secondItem="ycy-Et-nZf" secondAttribute="leading" constant="32" id="qHU-Qa-tgZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1C9-lw-icz">
+                                <rect key="frame" x="160" y="509.33333333333326" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="79z-Xf-HBJ"/>
+                                    <constraint firstAttribute="width" constant="75" id="uTn-Yb-MyL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="animationView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPx-3D-qcv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ycy-Et-nZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="293" id="Bgk-oC-grD"/>
+                            <constraint firstItem="ycy-Et-nZf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1" id="HcA-7r-6CQ"/>
+                            <constraint firstItem="ycy-Et-nZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122.66666666666669" id="Rh3-gj-fmL"/>
+                            <constraint firstItem="1C9-lw-icz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="Shz-cd-sHu"/>
+                            <constraint firstItem="ycy-Et-nZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="iTv-2W-tjr"/>
+                            <constraint firstItem="1C9-lw-icz" firstAttribute="top" secondItem="ycy-Et-nZf" secondAttribute="bottom" constant="7.3300000000000001" id="tQe-GH-bmi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="someView" destination="ycy-Et-nZf" id="4vQ-wm-LOB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
