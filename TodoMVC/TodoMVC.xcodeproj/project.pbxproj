@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5E2708E2B5BCC8200E47AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2708D2B5BCC8200E47AB6 /* AppDelegate.swift */; };
-		C5E270902B5BCC8200E47AB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2708F2B5BCC8200E47AB6 /* SceneDelegate.swift */; };
-		C5E270922B5BCC8200E47AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E270912B5BCC8200E47AB6 /* ViewController.swift */; };
-		C5E270952B5BCC8200E47AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E270932B5BCC8200E47AB6 /* Main.storyboard */; };
-		C5E270972B5BCC8400E47AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E270962B5BCC8400E47AB6 /* Assets.xcassets */; };
-		C5E2709A2B5BCC8400E47AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E270982B5BCC8400E47AB6 /* LaunchScreen.storyboard */; };
+		C59823142B78B1CB009A0171 /* TableView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59823132B78B1CB009A0171 /* TableView+ViewController.swift */; };
+		C5EAA5492B74094E00AAFE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EAA5482B74094E00AAFE5A /* AppDelegate.swift */; };
+		C5EAA54B2B74094E00AAFE5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EAA54A2B74094E00AAFE5A /* SceneDelegate.swift */; };
+		C5EAA54D2B74094E00AAFE5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EAA54C2B74094E00AAFE5A /* ViewController.swift */; };
+		C5EAA5522B74095000AAFE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5EAA5512B74095000AAFE5A /* Assets.xcassets */; };
+		C5EAA5552B74095000AAFE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EAA5532B74095000AAFE5A /* LaunchScreen.storyboard */; };
+		C5EAA5652B740B6A00AAFE5A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EAA5642B740B6A00AAFE5A /* Model.swift */; };
+		C5EAA5672B740D0200AAFE5A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EAA5662B740D0200AAFE5A /* ItemCell.swift */; };
+		C5EAA56B2B74FB6E00AAFE5A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EAA56A2B74FB6E00AAFE5A /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C5E2708A2B5BCC8200E47AB6 /* CircleViewGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleViewGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5E2708D2B5BCC8200E47AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5E2708F2B5BCC8200E47AB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5E270912B5BCC8200E47AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C5E270942B5BCC8200E47AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5E270962B5BCC8400E47AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C5E270992B5BCC8400E47AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5E2709B2B5BCC8400E47AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59823132B78B1CB009A0171 /* TableView+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+ViewController.swift"; sourceTree = "<group>"; };
+		C5EAA5452B74094E00AAFE5A /* TodoMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5EAA5482B74094E00AAFE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5EAA54A2B74094E00AAFE5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5EAA54C2B74094E00AAFE5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5EAA5512B74095000AAFE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5EAA5542B74095000AAFE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5EAA5562B74095000AAFE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5EAA5642B740B6A00AAFE5A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C5EAA5662B740D0200AAFE5A /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		C5EAA56A2B74FB6E00AAFE5A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C5E270872B5BCC8200E47AB6 /* Frameworks */ = {
+		C5EAA5422B74094E00AAFE5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +43,163 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C5E270812B5BCC8200E47AB6 = {
+		C59823152B78B1D1009A0171 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C5E2708C2B5BCC8200E47AB6 /* CircleViewGesture */,
-				C5E2708B2B5BCC8200E47AB6 /* Products */,
+				C59823132B78B1CB009A0171 /* TableView+ViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5EAA53C2B74094E00AAFE5A = {
+			isa = PBXGroup;
+			children = (
+				C5EAA5472B74094E00AAFE5A /* TodoMVC */,
+				C5EAA5462B74094E00AAFE5A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C5E2708B2B5BCC8200E47AB6 /* Products */ = {
+		C5EAA5462B74094E00AAFE5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5E2708A2B5BCC8200E47AB6 /* CircleViewGesture.app */,
+				C5EAA5452B74094E00AAFE5A /* TodoMVC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5E2708C2B5BCC8200E47AB6 /* CircleViewGesture */ = {
+		C5EAA5472B74094E00AAFE5A /* TodoMVC */ = {
 			isa = PBXGroup;
 			children = (
-				C5E2708D2B5BCC8200E47AB6 /* AppDelegate.swift */,
-				C5E2708F2B5BCC8200E47AB6 /* SceneDelegate.swift */,
-				C5E270912B5BCC8200E47AB6 /* ViewController.swift */,
-				C5E270932B5BCC8200E47AB6 /* Main.storyboard */,
-				C5E270962B5BCC8400E47AB6 /* Assets.xcassets */,
-				C5E270982B5BCC8400E47AB6 /* LaunchScreen.storyboard */,
-				C5E2709B2B5BCC8400E47AB6 /* Info.plist */,
+				C5EAA55C2B74097100AAFE5A /* Application */,
+				C5EAA5602B740A9200AAFE5A /* Resources */,
+				C5EAA55D2B74098700AAFE5A /* SupportingFiles */,
+				C5EAA55E2B740A4B00AAFE5A /* Screens */,
+				C59823152B78B1D1009A0171 /* Extensions */,
 			);
-			path = CircleViewGesture;
+			path = TodoMVC;
+			sourceTree = "<group>";
+		};
+		C5EAA55C2B74097100AAFE5A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA54A2B74094E00AAFE5A /* SceneDelegate.swift */,
+				C5EAA5482B74094E00AAFE5A /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C5EAA55D2B74098700AAFE5A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA5532B74095000AAFE5A /* LaunchScreen.storyboard */,
+				C5EAA5562B74095000AAFE5A /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C5EAA55E2B740A4B00AAFE5A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA56C2B74FB8200AAFE5A /* AddScreen */,
+				C5EAA55F2B740A5800AAFE5A /* MainScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C5EAA55F2B740A5800AAFE5A /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA5632B740AE700AAFE5A /* Model */,
+				C5EAA5622B740ADE00AAFE5A /* View */,
+				C5EAA5612B740AD000AAFE5A /* Controller */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		C5EAA5602B740A9200AAFE5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA5512B74095000AAFE5A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5EAA5612B740AD000AAFE5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA54C2B74094E00AAFE5A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5EAA5622B740ADE00AAFE5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA5662B740D0200AAFE5A /* ItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5EAA5632B740AE700AAFE5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA5642B740B6A00AAFE5A /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5EAA56C2B74FB8200AAFE5A /* AddScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA56D2B74FB9400AAFE5A /* View */,
+			);
+			path = AddScreen;
+			sourceTree = "<group>";
+		};
+		C5EAA56D2B74FB9400AAFE5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAA56A2B74FB6E00AAFE5A /* AddViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5E270892B5BCC8200E47AB6 /* CircleViewGesture */ = {
+		C5EAA5442B74094E00AAFE5A /* TodoMVC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5E2709E2B5BCC8400E47AB6 /* Build configuration list for PBXNativeTarget "CircleViewGesture" */;
+			buildConfigurationList = C5EAA5592B74095000AAFE5A /* Build configuration list for PBXNativeTarget "TodoMVC" */;
 			buildPhases = (
-				C5E270862B5BCC8200E47AB6 /* Sources */,
-				C5E270872B5BCC8200E47AB6 /* Frameworks */,
-				C5E270882B5BCC8200E47AB6 /* Resources */,
+				C5EAA5412B74094E00AAFE5A /* Sources */,
+				C5EAA5422B74094E00AAFE5A /* Frameworks */,
+				C5EAA5432B74094E00AAFE5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CircleViewGesture;
-			productName = CircleViewGesture;
-			productReference = C5E2708A2B5BCC8200E47AB6 /* CircleViewGesture.app */;
+			name = TodoMVC;
+			productName = TodoMVC;
+			productReference = C5EAA5452B74094E00AAFE5A /* TodoMVC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C5E270822B5BCC8200E47AB6 /* Project object */ = {
+		C5EAA53D2B74094E00AAFE5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					C5E270892B5BCC8200E47AB6 = {
+					C5EAA5442B74094E00AAFE5A = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = C5E270852B5BCC8200E47AB6 /* Build configuration list for PBXProject "CircleViewGesture" */;
+			buildConfigurationList = C5EAA5402B74094E00AAFE5A /* Build configuration list for PBXProject "TodoMVC" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +207,50 @@
 				en,
 				Base,
 			);
-			mainGroup = C5E270812B5BCC8200E47AB6;
-			productRefGroup = C5E2708B2B5BCC8200E47AB6 /* Products */;
+			mainGroup = C5EAA53C2B74094E00AAFE5A;
+			productRefGroup = C5EAA5462B74094E00AAFE5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5E270892B5BCC8200E47AB6 /* CircleViewGesture */,
+				C5EAA5442B74094E00AAFE5A /* TodoMVC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C5E270882B5BCC8200E47AB6 /* Resources */ = {
+		C5EAA5432B74094E00AAFE5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E2709A2B5BCC8400E47AB6 /* LaunchScreen.storyboard in Resources */,
-				C5E270972B5BCC8400E47AB6 /* Assets.xcassets in Resources */,
-				C5E270952B5BCC8200E47AB6 /* Main.storyboard in Resources */,
+				C5EAA5552B74095000AAFE5A /* LaunchScreen.storyboard in Resources */,
+				C5EAA5522B74095000AAFE5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C5E270862B5BCC8200E47AB6 /* Sources */ = {
+		C5EAA5412B74094E00AAFE5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E270922B5BCC8200E47AB6 /* ViewController.swift in Sources */,
-				C5E2708E2B5BCC8200E47AB6 /* AppDelegate.swift in Sources */,
-				C5E270902B5BCC8200E47AB6 /* SceneDelegate.swift in Sources */,
+				C5EAA54D2B74094E00AAFE5A /* ViewController.swift in Sources */,
+				C5EAA5492B74094E00AAFE5A /* AppDelegate.swift in Sources */,
+				C5EAA56B2B74FB6E00AAFE5A /* AddViewController.swift in Sources */,
+				C5EAA54B2B74094E00AAFE5A /* SceneDelegate.swift in Sources */,
+				C5EAA5652B740B6A00AAFE5A /* Model.swift in Sources */,
+				C5EAA5672B740D0200AAFE5A /* ItemCell.swift in Sources */,
+				C59823142B78B1CB009A0171 /* TableView+ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C5E270932B5BCC8200E47AB6 /* Main.storyboard */ = {
+		C5EAA5532B74095000AAFE5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C5E270942B5BCC8200E47AB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C5E270982B5BCC8400E47AB6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C5E270992B5BCC8400E47AB6 /* Base */,
+				C5EAA5542B74095000AAFE5A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +258,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C5E2709C2B5BCC8400E47AB6 /* Debug */ = {
+		C5EAA5572B74095000AAFE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +321,7 @@
 			};
 			name = Debug;
 		};
-		C5E2709D2B5BCC8400E47AB6 /* Release */ = {
+		C5EAA5582B74095000AAFE5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +377,7 @@
 			};
 			name = Release;
 		};
-		C5E2709F2B5BCC8400E47AB6 /* Debug */ = {
+		C5EAA55A2B74095000AAFE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -294,10 +386,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2S6URFDMC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CircleViewGesture/Info.plist;
+				INFOPLIST_FILE = TodoMVC/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorKrysin.CircleViewGesture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igorKrysin.TodoMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -313,7 +404,7 @@
 			};
 			name = Debug;
 		};
-		C5E270A02B5BCC8400E47AB6 /* Release */ = {
+		C5EAA55B2B74095000AAFE5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -322,10 +413,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2S6URFDMC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CircleViewGesture/Info.plist;
+				INFOPLIST_FILE = TodoMVC/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,7 +423,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorKrysin.CircleViewGesture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igorKrysin.TodoMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,25 +434,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C5E270852B5BCC8200E47AB6 /* Build configuration list for PBXProject "CircleViewGesture" */ = {
+		C5EAA5402B74094E00AAFE5A /* Build configuration list for PBXProject "TodoMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5E2709C2B5BCC8400E47AB6 /* Debug */,
-				C5E2709D2B5BCC8400E47AB6 /* Release */,
+				C5EAA5572B74095000AAFE5A /* Debug */,
+				C5EAA5582B74095000AAFE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5E2709E2B5BCC8400E47AB6 /* Build configuration list for PBXNativeTarget "CircleViewGesture" */ = {
+		C5EAA5592B74095000AAFE5A /* Build configuration list for PBXNativeTarget "TodoMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5E2709F2B5BCC8400E47AB6 /* Debug */,
-				C5E270A02B5BCC8400E47AB6 /* Release */,
+				C5EAA55A2B74095000AAFE5A /* Debug */,
+				C5EAA55B2B74095000AAFE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C5E270822B5BCC8200E47AB6 /* Project object */;
+	rootObject = C5EAA53D2B74094E00AAFE5A /* Project object */;
 }

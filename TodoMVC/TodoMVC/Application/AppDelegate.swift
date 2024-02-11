@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CircleViewGesture
+//  TodoMVC
 //
-//  Created by Игорь Крысин on 20.01.2024.
+//  Created by Игорь Крысин on 07.02.2024.
 //
 
 import UIKit
