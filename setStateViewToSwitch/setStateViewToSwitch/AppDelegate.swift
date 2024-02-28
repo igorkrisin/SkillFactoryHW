@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  TodoMVC
+//  setStateViewToSwitch
 //
-//  Created by Игорь Крысин on 07.02.2024.
+//  Created by Игорь Крысин on 28.02.2024.
 //
 
 import UIKit

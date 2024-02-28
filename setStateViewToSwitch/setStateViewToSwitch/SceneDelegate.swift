@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  TodoMVC
+//  setStateViewToSwitch
 //
-//  Created by Игорь Крысин on 07.02.2024.
+//  Created by Игорь Крысин on 28.02.2024.
 //
 
 import UIKit
@@ -10,26 +10,17 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    
-    
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let vc = ViewController()
         
-        let window = UIWindow(windowScene: windowScene)
+        let navViewController = UINavigationController(rootViewController: vc)
+        guard let _ = (scene as? UIWindowScene) else { return }
         
-        let navController = UINavigationController()
-        
-        let viewController = ViewController()
-        
-        navController.viewControllers = [viewController]
-        
-        window.rootViewController = navController
-        
-        self.window = window
-        self.window?.backgroundColor = UIColor.white
-        window.makeKeyAndVisible()
+        self.window?.rootViewController = navViewController
+        self.window?.backgroundColor = .white
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
